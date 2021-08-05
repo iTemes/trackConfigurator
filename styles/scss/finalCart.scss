@@ -1,0 +1,73 @@
+.container.container--final {
+    @include media-breakpoint-down(xl) {
+        flex-direction: column-reverse;
+        margin-top: 10px;
+    }
+}
+
+.cart-order {
+    width: 49%;
+    max-width: 850px;
+    padding: 2rem;
+
+    font-size: 0.8rem;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-radius: 1rem;
+    @include media-breakpoint-down(xl) {
+        width: 100%;
+        max-width: unset;
+        box-shadow: none;
+        padding: 2rem 0;
+
+        
+    }
+    &__title {
+        font-size: 0.8rem;
+        font-weight: 600;
+
+        a {
+            text-decoration: none;
+        }
+        @include media-breakpoint-down(xl) {
+            font-size: 0.7rem;
+        }
+    }
+
+    &__amount {
+        text-align: right;
+    }
+
+
+    &__total {
+        text-align: right;
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+}
+
+.checkout {
+    width: 49%;
+    max-width: 850px;
+    padding: 2rem;
+
+    font-size: 1rem;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-radius: 1rem;
+
+    @include media-breakpoint-down(xl) {
+        width: 100%;
+        max-width: unset;
+        margin-bottom: 5rem;
+        padding: 2rem 0;
+
+        box-shadow: none;
+    }
+}
+
+.wrraper-tel {
+    @include media-breakpoint-down(xl) {
+        margin-bottom: 1rem;
+    }
+}

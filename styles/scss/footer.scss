@@ -1,0 +1,41 @@
+.page-footer {
+    position: fixed;
+
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: $primary;
+
+    z-index: 998;
+
+    .container {
+        height: 100%;
+        padding: 16px 0;
+
+        @include media-breakpoint-down(xl) {
+           justify-content: flex-end;
+           padding: 0;
+        }
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .wysiwyg {
+        &__text {
+            font-size: 14px;
+        }
+
+        @include media-breakpoint-down(xl) {
+            display: none;
+        }
+    }
+
+    @include media-breakpoint-down(xxl) {
+        flex-direction: column;
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+}
