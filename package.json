@@ -1,0 +1,51 @@
+{
+  "name": "vue_admin",
+  "version": "1.0.0",
+  "description": "Админские модули",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx webpack --config webpack.config.js # сборка vue-фронта-админки",
+    "build-prod": "npx webpack --mode=production --config webpack.config.js # сборка vue-фронта конфигуратора production",
+    "dev": "npx webpack --mode=development --watch --config webpack.config.js # сборка webpacka и livereload vue",
+    "prettier": "npx prettier  -- write .track_configurator/**/*.js *.vue",
+    "lint": "npx eslint --debug --ext .js,.vue track_configurator/",
+    "lint:write": "npx eslint --debug --ext .js,.vue track_configurator/ --fix"
+  },
+  "author": "Басманов Илья <ffsdmad@gmail.com> (http://basmanov.breys.ru/)",
+  "license": "MIT",
+  "dependencies": {
+    "@kooneko/livereload-webpack-plugin": "^1.2.1",
+    "@svgdotjs/svg.js": "^3.1.0",
+    "axios": "^0.21.1",
+    "babel-eslint": "^10.1.0",
+    "bootstrap": "^5.0.1",
+    "dotenv": "^10.0.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "js-cookie": "^2.2.1",
+    "smoothscroll-polyfill": "^0.4.4",
+    "uuid": "^3.4.0",
+    "vue": "^2.6.12",
+    "vue-custom-scrollbar": "^1.4.0",
+    "vue-i18n": "^8.24.5",
+    "vue-loader": "^15.9.6",
+    "vue-multiselect": "^2.1.6",
+    "vue-phone-mask-input": "^1.1.11",
+    "vue-router": "^3.5.1",
+    "vue-slim-tabs": "^0.4.0",
+    "vue-template-compiler": "^2.6.12",
+    "vuex": "^3.6.2",
+    "webpack": "^5.27.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.28.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-vue": "^7.10.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "node-sass": "^6.0.0",
+    "sass-loader": "^11.1.1"
+  }
+}
